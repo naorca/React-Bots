@@ -1,13 +1,16 @@
 {
-  "name": "08-routing-bots",
+  "name": "react-bots",
   "version": "1.0.0",
-  "author": "Ajar",
+  "author": "Naor",
   "main": "index.js",
+  "homepage": "https://github.com/naorca/React-Bots",
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "rimraf dist && webpack -p --colors --progress",
-    "start": "serve dist -p 3000"
+    "start": "serve dist -p 3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "es6-promise": "^4.1.0",
