@@ -9,8 +9,6 @@
     "dev": "webpack-dev-server",
     "build": "rimraf dist && webpack -p --colors --progress",
     "start": "serve dist -p 3000",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "es6-promise": "^4.1.0",
